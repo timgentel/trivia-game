@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <div class="container">  
+        <h1 class="text-center">World Cup Trivia Game!</h1>
+    </div>
+    <div class="container">   
+        <div class="jumbotron">
+            <div id="start">
+                <button type="button" id="startButton">Start</button>
+            </div>
+            
+            <div id="questions">
+                <h3 class="text-center">Time Remaining: 
+                    <span id="timer"></span>
+                    Seconds
+                </h3>
+                <form>
+                <p class="question">1. Which player has the most World Cup goals?</p>
+                <ul class="answers">
+                <input type="radio" name="question1" value="a" id="q1a"><label for="q1a">Pele</label><br/>
+                <input type="radio" name="question1" value="b" id="q1b"><label for="q1b">Ronaldo (R9)</label><br/>
+                <input type="radio" name="question1" value="c" id="q1c"><label for="q1c">Miroslav Klose</label><br/>
+                <input type="radio" name="question1" value="d" id="q1d"><label for="q1d">Messi</label><br/>
+                </ul>
+                <p class="question">2. What country has played in every World Cup?</p>
+                <ul class="answers">
+                <input type="radio" name="question2" value="a" id="q1a"><label for="q1a">Germany</label><br/>
+                <input type="radio" name="question2" value="b" id="q1b"><label for="q1b">Brasil</label><br/>
+                <input type="radio" name="question2" value="c" id="q1c"><label for="q1c">England</label><br/>
+                <input type="radio" name="question2" value="d" id="q1d"><label for="q1d">Spain</label><br/>
+                </ul>
+                <p class="question">3. Which country won the first World Cup?</p>
+                <ul class="answers">
+                <input type="radio" name="question3" value="a" id="q1a"><label for="q1a">Italy</label><br/>
+                <input type="radio" name="question3" value="b" id="q1b"><label for="q1b">Uruguay</label><br/>
+                <input type="radio" name="question3" value="c" id="q1c"><label for="q1c">Brasil</label><br/>
+                <input type="radio" name="question3" value="d" id="q1d"><label for="question6">Argentina</label><br/>
+                </ul>
+                <p class="question">4. Who scored in the 2010 World Cup final?</p>
+                <ul class="answers">
+                <input type="radio" name="question4" value="a" id="q2a"><label for="question6">Mario Götze</label><br/>
+                <input type="radio" name="question4" value="b" id="q2b"><label for="question6">Cristiano Ronaldo</label><br/>
+                <input type="radio" name="question4" value="c" id="q2c"><label for="question6">Andrés Iniesta</label><br/>
+                <input type="radio" name="question4" value="d" id="q2d"><label for="question6">Fernando Torres</label><br/>
+                </ul>
+                <p class="question">5. Which of these countries DID NOT qualify for the 2018 World Cup?</p>
+                <ul class="answers">
+                    <input type="radio" name="question5" value="a" id="q2a"><label for="question5">Iran</label><br/>
+                    <input type="radio" name="question5" value="b" id="q2b"><label for="question5">Iceland</label><br/>
+                    <input type="radio" name="question5" value="c" id="q2c"><label for="question5">Egypt</label><br/>
+                    <input type="radio" name="question5" value="d" id="q2d"><label for="question5">United States</label><br/>
+                </ul>
+                <p class="question">6. 
+                    Who is the youngest player to play in a World Cup final?/p>
+                <ul class="answers">
+                    <input type="radio" name="question6" value="a"><label >Michael Owen</label><br/>
+                    <input type="radio" name="question6" value="b"><label >Cristiano Ronaldo</label><br/>
+                    <input type="radio" name="question6" value="c"><label >Pelé</label><br/>
+                    <input type="radio" name="question6" value="d"><label >Maradona</label><br/>
+                </ul>
+        
+                <button id="submit">submit</button>
+                <hr class="my-4">
+                </form>
+            </div>
+        <div id="resualts">
+            <h3> Correct: <span id="correct-answers"></span><br/>
+                Incorrect: <span id="incorrect-answers"></span><br/>
+                Unanswered: <span id="unanswered"></span><br/>
+                <button type="button" id="restart">restart</button>
+
+
+            </h3>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+  </body>
+</html>
